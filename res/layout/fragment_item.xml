@@ -28,7 +28,7 @@
         android:text="@string/tvPrice" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/tvCategoryFilterLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -61,8 +61,8 @@
         android:id="@+id/etLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView1"
-        android:layout_toRightOf="@+id/textView1"
+        android:layout_alignTop="@+id/tvCategoryFilterLabel"
+        android:layout_toRightOf="@+id/tvCategoryFilterLabel"
         android:ems="10" />
 
     <Button

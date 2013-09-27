@@ -9,5 +9,15 @@
     <string name="tvPrice">Price</string>
     <string name="tvLocation">Location</string>
     <string name="btnSubmit">Submit</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_filter">FilterActivity</string>
+    <string name="title_activity_marketplace">MarketplaceActivity</string>
+    <string name="login_btn_label">Sign in</string>
+    <string name="filter_category_label">Category:</string>
+    <string name="filter_location_label">Location:</string>
+    <string name="filter_minprice_label">Min price</string>
+    <string name="filter_maxprice_label">Max price</string>
+    <string name="filter_isused_label">Used?</string>
+    <string name="filter_save_btn">Save</string>
 
 </resources>

@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FilterActivity" >
+
+    <TextView
+        android:id="@+id/tvCategoryFilterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/filter_category_label" />
+
+    <TextView
+        android:id="@+id/tvLocationFilterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCategoryFilterLabel"
+        android:layout_below="@+id/tvCategoryFilterLabel"
+        android:layout_marginTop="30dp"
+        android:text="@string/filter_location_label" />
+
+    <TextView
+        android:id="@+id/tvMinPriceFilterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCategoryFilterLabel"
+        android:layout_below="@+id/tvLocationFilterLabel"
+        android:layout_marginTop="30dp"
+        android:text="@string/filter_minprice_label" />
+
+    <TextView
+        android:id="@+id/tvMaxPriceFilterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCategoryFilterLabel"
+        android:layout_below="@+id/tvMinPriceFilterLabel"
+        android:layout_marginTop="30dp"
+        android:text="@string/filter_maxprice_label" />
+
+    <TextView
+        android:id="@+id/tvIsUsedFilterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCategoryFilterLabel"
+        android:layout_below="@+id/tvMaxPriceFilterLabel"
+        android:layout_marginTop="30dp"
+        android:text="@string/filter_isused_label" />
+
+    <Spinner
+        android:id="@+id/spCategoryFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvCategoryFilterLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/tvCategoryFilterLabel" />
+
+    <EditText
+        android:id="@+id/etLocationInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvLocationFilterLabel"
+        android:layout_alignLeft="@+id/spCategoryFilter"
+        android:ems="10" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etMinPriceInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvMinPriceFilterLabel"
+        android:layout_alignLeft="@+id/spCategoryFilter"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etMaxPriceInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvMaxPriceFilterLabel"
+        android:layout_alignLeft="@+id/spCategoryFilter"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <CheckBox
+        android:id="@+id/cbUsedFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvIsUsedFilterLabel"
+        android:layout_alignLeft="@+id/spCategoryFilter" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvMaxPriceFilterLabel"
+        android:layout_below="@+id/tvIsUsedFilterLabel"
+        android:layout_marginTop="45dp"
+        android:text="@string/filter_save_btn" />
+
+</RelativeLayout>
