@@ -19,5 +19,6 @@
     <string name="filter_maxprice_label">Max price</string>
     <string name="filter_isused_label">Used?</string>
     <string name="filter_save_btn">Save</string>
+    <string name="searchview_query_hint">Search the marketplace</string>
 
 </resources>

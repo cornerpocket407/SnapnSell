@@ -8,4 +8,24 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MarketplaceActivity" >
 
+    <SearchView
+        android:id="@+id/searchView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:queryHint="@string/searchview_query_hint" >
+
+    </SearchView>
+
+    <ListView
+        android:id="@+id/lvMarketplaceItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" >
+    </ListView>
+
 </RelativeLayout>
