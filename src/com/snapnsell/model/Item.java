@@ -18,19 +18,27 @@ public class Item extends Model {
     @Column(name = "title")
 	private String title;
 
-    @Column(name = "itemPicPath")
+    @Column(name = "item_pic_path")
 	private String itemPicPath;
-	
-    public Item() {
-        super();
-    }
+
+    @Column(name = "price")
+	private Double price;
+
+    @Column(name = "is_used")
+	private boolean used;
     
-	public Item(String description, String location, String title, String itemPicPath) {
-		this();
+    public Item() {
+    	super();
+    }
+	
+	public Item(String description, String location, String title, String itemPicPath, Double price, boolean used) {
+		super();
 		this.description = description;
 		this.location = location;
 		this.title = title;
 		this.itemPicPath = itemPicPath;
+		this.price = price;
+		this.used = used;
 	}
 
 	public String getDescription() {
@@ -63,5 +71,21 @@ public class Item extends Model {
 
 	public void setItemPicPath(String itemPicPath) {
 		this.itemPicPath = itemPicPath;
+	}
+
+	public Double getPrice() {
+		return price;
+	}
+
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+
+	public boolean isUsed() {
+		return used;
+	}
+
+	public void setUsed(boolean used) {
+		this.used = used;
 	}
  }

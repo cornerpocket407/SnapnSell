@@ -16,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 
@@ -34,6 +35,7 @@ public class ItemDescriptionFragment extends Fragment {
 	private EditText etLocation;
 	private ImageView ivItemPic;
 	private EditText etTitle;
+	private CheckBox cbUsed;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -64,8 +66,10 @@ public class ItemDescriptionFragment extends Fragment {
 			etDescription.setText(item.getDescription());
 			etTitle.setText(item.getTitle());
 			etLocation.setText(item.getLocation());
+			etPrice.setText(String.valueOf(item.getPrice()));
+			cbUsed.setChecked(item.isUsed());
 			String itemPicPath = item.getItemPicPath();
-			if (!item.getItemPicPath().isEmpty()) {
+			if (item.getItemPicPath() != null) {
 				setImage(itemPicPath);
 			}
 		}
@@ -74,17 +78,20 @@ public class ItemDescriptionFragment extends Fragment {
 	private void init(boolean enabled) {
 		setEtDescription((EditText) getActivity().findViewById(
 				R.id.etDescription));
-		getEtDescription().setEnabled(enabled);
+		etDescription.setEnabled(enabled);
 
 		setEtPrice((EditText) getActivity().findViewById(R.id.etPrice));
-		getEtPrice().setEnabled(enabled);
+		etPrice.setEnabled(enabled);
 
 		setEtLocation((EditText) getActivity().findViewById(R.id.etLoc));
-		getEtLocation().setEnabled(enabled);
+		etLocation.setEnabled(enabled);
 
 		setEtTitle((EditText) getActivity().findViewById(R.id.etTitle));
-		getEtTitle().setEnabled(enabled);
+		etTitle.setEnabled(enabled);
 
+		cbUsed = (CheckBox) getActivity().findViewById(R.id.cbUsed);
+		cbUsed.setEnabled(enabled);
+		
 		setIvItemPic((ImageView) getActivity().findViewById(R.id.ivItemPic));
 		getIvItemPic().setOnClickListener(new OnClickListener() {
 
@@ -190,6 +197,14 @@ public class ItemDescriptionFragment extends Fragment {
 
 	public void setItemPicUri(Uri itemPicUri) {
 		this.itemPicUri = itemPicUri;
+	}
+
+	public CheckBox getCbUsed() {
+		return cbUsed;
+	}
+
+	public void setCbUsed(CheckBox cbUsed) {
+		this.cbUsed = cbUsed;
 	}
 
 }
