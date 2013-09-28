@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import com.snapnsell.activity.PaymentActivity;
 import com.snapnsell.fragment.ItemDescriptionFragment;
 import com.snapnsell.model.Item;
 import com.snapnsell.type.ItemDescSection;
@@ -29,14 +30,14 @@ public class BuyActivity extends FragmentActivity {
 //				ItemDescriptionFragment fragment = (ItemDescriptionFragment) getSupportFragmentManager().findFragmentById(R.id.flItemDesc);
 //				String description = fragment.getEtDescription().getText().toString();
 //				String location = fragment.getEtLocation().getText().toString();
-////				String price = fragment.getEtPrice().g
+//				Double price = Double.valueOf(fragment.getEtPrice().getText().toString());
 //				String title = fragment.getEtTitle().getText().toString();
 //				String itemPicPath = fragment.getItemPicUri() == null ? "" : fragment.getItemPicUri().getPath();
 //				Item item = new Item(description, location, title, itemPicPath);
 //				item.save();
 //
-//				Intent intent = new Intent(BuyActivity.this, ConfirmActivity.class);
-//				startActivity(intent);
+				Intent intent = new Intent(BuyActivity.this, PaymentActivity.class);
+				startActivity(intent);
 			}
 		});
 	}

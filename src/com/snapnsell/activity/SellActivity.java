@@ -27,8 +27,6 @@ public class SellActivity extends FragmentActivity {
 			
 			@Override
 			public void onClick(View v) {
-				
-				
 				ItemDescriptionFragment fragment = (ItemDescriptionFragment) getSupportFragmentManager().findFragmentById(R.id.flItemDesc);
 				String description = fragment.getEtDescription().getText().toString();
 				String location = fragment.getEtLocation().getText().toString();

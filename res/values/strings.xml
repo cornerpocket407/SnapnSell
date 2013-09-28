@@ -24,5 +24,10 @@
     <string name="used">Used</string>
     <string name="confirm">Confirm</string>
     <string name="sell">Sell</string>
+    <string name="title_activity_payment">PaymentActivity</string>
+    <string name="expiration">Expiration</string>
+    <string name="card_number">Card Number</string>
+    <string name="purchase">Purchase</string>
+    <string name="cvc">CVC</string>
 
 </resources>
