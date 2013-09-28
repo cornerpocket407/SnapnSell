@@ -29,5 +29,9 @@
     <string name="card_number">Card Number</string>
     <string name="purchase">Purchase</string>
     <string name="cvc">CVC</string>
+    <string name="title_activity_my_listing">MyListingActivity</string>
+    <string name="marketplace">Marketplace</string>
+    <string name="myListing">My Listing</string>
+    <string name="title_activity_test">TestActivity</string>
 
 </resources>

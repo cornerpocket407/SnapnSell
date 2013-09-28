@@ -9,13 +9,14 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import com.snapnsell.BaseActivity;
 import com.snapnsell.ConfirmActivity;
 import com.snapnsell.R;
 import com.snapnsell.fragment.ItemDescriptionFragment;
 import com.snapnsell.model.Item;
 import com.snapnsell.type.ItemDescSection;
 
-public class SellActivity extends FragmentActivity {
+public class SellActivity extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +55,7 @@ public class SellActivity extends FragmentActivity {
 		transaction.replace(R.id.flItemDesc, itemFragment);
 		transaction.commit();
 	}
-
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

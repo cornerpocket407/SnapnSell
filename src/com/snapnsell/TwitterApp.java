@@ -23,6 +23,9 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 public class TwitterApp extends com.activeandroid.app.Application {
 	private static Context context;
 	
+	public final static String FRAGMENT_TAG_MARKETPLACE = "MarketplaceFragment";
+	public static final String FRAGMENT_TAG_MY_LISTING = "MyListingFragment";
+	
     @Override
     public void onCreate() {
         super.onCreate();
