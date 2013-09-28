@@ -22,7 +22,7 @@ public class ConfirmActivity extends FragmentActivity {
 		android.support.v4.app.FragmentTransaction transaction = manager
 				.beginTransaction();
 		Bundle bundle = new Bundle();
-		bundle.putSerializable(ItemDescriptionFragment.BUNDLE_SECTION, ItemDescSection.SELL);
+		bundle.putSerializable(ItemDescriptionFragment.BUNDLE_SECTION, ItemDescSection.CONFIRM);
 		ItemDescriptionFragment itemFragment = new ItemDescriptionFragment();
 		itemFragment.setArguments(bundle);
 		transaction.replace(R.id.frame_container, itemFragment);

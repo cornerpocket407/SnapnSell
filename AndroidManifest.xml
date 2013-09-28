@@ -18,7 +18,8 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme" 
+        android:name="com.snapnsell.TwitterApp">
         <meta-data
             android:name="AA_DB_NAME"
             android:value="RestClient.db" />
@@ -30,7 +31,7 @@
             android:name="com.snapnsell.LoginActivity"
             android:label="@string/title_activity_login" >
             
- <!--            <intent-filter>
+          <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
@@ -39,16 +40,16 @@
                 <data
                     android:host="mytwitterapp"
                     android:scheme="oauth" />
-            </intent-filter> -->
+            </intent-filter> 
         </activity>
         <activity
             android:name="com.snapnsell.BuyActivity"
             android:label="@string/app_name" >
-       <!--      <intent-filter>
+        <!--   <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter> -->
+            </intent-filter>  -->
         </activity>
         <activity
             android:name="com.snapnsell.FilterActivity"
@@ -61,6 +62,11 @@
         <activity
             android:name="com.snapnsell.ConfirmActivity"
             android:label="@string/app_name" >
+            <!--    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>   -->
         </activity>
     </application>
 
