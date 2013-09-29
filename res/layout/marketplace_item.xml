@@ -19,7 +19,7 @@
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvItemCategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/tvItemTitle"
@@ -28,13 +28,13 @@
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvItemPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
+        android:layout_alignBottom="@+id/tvItemCategory"
         android:layout_gravity="right"
-        android:layout_toRightOf="@+id/textView2"
-        android:layout_alignBottom="@+id/textView2"       
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/tvItemCategory"
         android:text="TextView" />
 
 </RelativeLayout>
