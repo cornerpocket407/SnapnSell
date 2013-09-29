@@ -76,37 +76,37 @@
         <activity
             android:name="com.snapnsell.activity.SellActivity"
             android:label="@string/app_name" >
-         <!--    <intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.snapnsell.activity.PaymentActivity"
+            android:label="@string/title_activity_payment" >
+          <!--   <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter> -->
         </activity>
         <activity
-            android:name="com.snapnsell.activity.PaymentActivity"
-            android:label="@string/title_activity_payment" >
-        </activity>
-        <activity
             android:name="com.snapnsell.MyListingActivity"
             android:label="@string/title_activity_my_listing" >
-            <!-- 
-                  <intent-filter>
+
+            <!--
+                       <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter> 
-             -->
+            </intent-filter>
+            -->
         </activity>
         <activity
-            android:name="com.snapnsell.TestActivity"
-            android:label="@string/title_activity_test" >
-            
-              <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter> 
-            
+            android:name="com.snapnsell.ReceiptActivity"
+            android:label="@string/title_activity_receipt" >
         </activity>
     </application>
 

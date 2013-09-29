@@ -33,5 +33,7 @@
     <string name="marketplace">Marketplace</string>
     <string name="myListing">My Listing</string>
     <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_receipt">ReceiptActivity</string>
+    <string name="tweet_your_purchase">Tweet your purchase!</string>
 
 </resources>
