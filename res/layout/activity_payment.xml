@@ -13,8 +13,9 @@
         android:name="com.snapnsell.fragment.ItemDescriptionSmallFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
         tools:layout="@layout/fragment_item_description_small" />
 
     <fragment
@@ -24,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/ftItem"
         android:layout_below="@+id/ftItem"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="30dp"
         tools:layout="@layout/fragment_payment" />
 
 </RelativeLayout>

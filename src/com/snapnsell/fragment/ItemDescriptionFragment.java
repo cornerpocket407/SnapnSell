@@ -60,8 +60,8 @@ public class ItemDescriptionFragment extends Fragment {
 		final ItemDescSection section = (ItemDescSection) getArguments().get(
 				BUNDLE_SECTION);
 		init(section == ItemDescSection.SELL);
-		if (section == ItemDescSection.CONFIRM) {
-			Item item = new Select().from(Item.class).orderBy("id").limit("1")
+		if (section == ItemDescSection.CONFIRM || section == ItemDescSection.BUY) {
+			Item item = new Select().from(Item.class).orderBy("id DESC").limit("1")
 					.executeSingle();
 			etDescription.setText(item.getDescription());
 			etTitle.setText(item.getTitle());
@@ -83,7 +83,7 @@ public class ItemDescriptionFragment extends Fragment {
 		setEtPrice((EditText) getActivity().findViewById(R.id.etPrice));
 		etPrice.setEnabled(enabled);
 
-		setEtLocation((EditText) getActivity().findViewById(R.id.etLoc));
+		setEtLocation((EditText) getActivity().findViewById(R.id.etLocation));
 		etLocation.setEnabled(enabled);
 
 		setEtTitle((EditText) getActivity().findViewById(R.id.etTitle));

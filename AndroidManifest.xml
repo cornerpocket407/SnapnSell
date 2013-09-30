@@ -52,14 +52,12 @@
         <activity
             android:name="com.snapnsell.BuyActivity"
             android:label="@string/app_name" >
-
-            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            -->
+             
         </activity>
         <activity
             android:name="com.snapnsell.FilterActivity"
@@ -68,29 +66,41 @@
         <activity
             android:name="com.snapnsell.MarketplaceActivity"
             android:label="@string/title_activity_marketplace" >
-        </activity>
-        <activity
-            android:name="com.snapnsell.ConfirmActivity"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.snapnsell.activity.SellActivity"
-            android:label="@string/app_name" >
-
+          <!--   
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+             -->
         </activity>
         <activity
-            android:name="com.snapnsell.activity.PaymentActivity"
-            android:label="@string/title_activity_payment" >
-          <!--   <intent-filter>
+            android:name="com.snapnsell.ConfirmActivity"
+            android:label="@string/confirm_your_listing" >
+        </activity>
+        <activity
+            android:name="com.snapnsell.activity.SellActivity"
+            android:label="@string/create_a_listing" >
+
+            <!-- 
+             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter> -->
+            </intent-filter>
+             
+             -->
+        </activity>
+        <activity
+            android:name="com.snapnsell.activity.PaymentActivity"
+            android:label="Payment Info" >
+     <!--       
+           <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> 
+            --> 
         </activity>
         <activity
             android:name="com.snapnsell.MyListingActivity"
@@ -106,7 +116,7 @@
         </activity>
         <activity
             android:name="com.snapnsell.ReceiptActivity"
-            android:label="@string/title_activity_receipt" >
+            android:label="@string/receipt" >
         </activity>
     </application>
 

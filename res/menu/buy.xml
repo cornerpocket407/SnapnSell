@@ -1,15 +1,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    <!--   <item
+       <item
         android:id="@+id/miMarket"
         android:icon="@drawable/ic_action_marketplace"
         android:onClick="onMarketplace"
         android:showAsAction="ifRoom|withText"
         android:title="@string/marketplace"/>
-    
-             <item
-        android:id="@+id/miMyListing"
-        android:icon="@drawable/ic_action_my_listing"
-        android:onClick="onMyListing"
-        android:showAsAction="ifRoom|withText"
-        android:title="@string/myListing"/> -->
 </menu>

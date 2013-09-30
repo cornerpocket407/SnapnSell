@@ -24,46 +24,9 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_alignTop="@+id/tvPrice"
-			android:layout_toRightOf="@+id/cbUsed"
+			android:layout_toRightOf="@+id/tvDescription"
 			android:ems="10"
 			android:inputType="numberDecimal" />
-
-	<TextView
-			android:id="@+id/tvLocation"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_alignParentLeft="true"
-			android:layout_below="@+id/tvPrice"
-			android:layout_marginTop="35dp"
-			android:text="@string/tvLocation" />
-
-	<CheckBox
-			android:id="@+id/cbUsed"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_alignParentLeft="true"
-			android:layout_below="@+id/tvLocation"
-			android:layout_marginTop="28dp"
-			android:text="@string/used" />
-
-	<TextView
-			android:id="@+id/tvTitle"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_alignParentLeft="true"
-			android:layout_below="@+id/ivItemPic"
-			android:text="Title" />
-
-	<EditText
-			android:id="@+id/etTitle"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_alignTop="@+id/tvTitle"
-			android:layout_toRightOf="@+id/cbUsed"
-			android:ems="10" >
-
-		<requestFocus />
-	</EditText>
 
 	<TextView
 			android:id="@+id/tvDescription"
@@ -78,15 +41,55 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_alignTop="@+id/tvDescription"
-			android:layout_toRightOf="@+id/cbUsed"
+			android:layout_toRightOf="@+id/tvDescription"
 			android:ems="10" />
 
+	<TextView
+	    android:id="@+id/tvLocation"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/etPrice"
+	    android:text="@string/tvLocation" />
+
 	<EditText
-			android:id="@+id/etLoc"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_alignLeft="@+id/etPrice"
-			android:layout_alignTop="@+id/tvLocation"
-			android:ems="10" />
+	    android:id="@+id/etLocation"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/etPrice"
+	    android:layout_alignTop="@+id/tvLocation"
+	    android:ems="10" />
+
+	<TextView
+	    android:id="@+id/tvTitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/ivItemPic"
+	    android:layout_marginTop="5dp"
+	    android:text="@string/title" />
+	
+	<EditText
+	    android:id="@+id/etTitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/tvTitle"
+	    android:layout_toRightOf="@+id/tvDescription"
+	    android:ems="10" />
+
+	<TextView
+	    android:id="@+id/tvUsed"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/etLocation"
+	    android:text="@string/used" />
+
+	<CheckBox
+	    android:id="@+id/cbUsed"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/tvUsed"
+	    android:layout_toRightOf="@+id/tvDescription" />
 
 </RelativeLayout>

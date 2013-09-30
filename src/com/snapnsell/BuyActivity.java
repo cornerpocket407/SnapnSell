@@ -15,7 +15,7 @@ import com.snapnsell.model.Item;
 import com.snapnsell.type.ItemDescSection;
 
 
-public class BuyActivity extends FragmentActivity {
+public class BuyActivity extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -52,12 +52,5 @@ public class BuyActivity extends FragmentActivity {
 		itemFragment.setArguments(bundle);
 		transaction.replace(R.id.flItemDesc, itemFragment);
 		transaction.commit();
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.buy, menu);
-		return true;
 	}
 }

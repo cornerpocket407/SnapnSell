@@ -24,7 +24,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="66dp"
-        android:text="Thanks for your purchase!" />
+        android:text="Thanks for your purchase!"
+        android:textSize="20sp" />
 
     <fragment
         android:id="@+id/fragment1"

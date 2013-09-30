@@ -43,7 +43,7 @@ public class ItemDescriptionSmallFragment extends Fragment {
 	public void onStart() {
 		super.onStart();
 		init();
-		Item item = new Select().from(Item.class).orderBy("id").limit("1")
+		Item item = new Select().from(Item.class).orderBy("id desc").limit("1")
 				.executeSingle();
 		tvTitle.setText(item.getTitle());
 		tvLocation.setText(item.getLocation());
