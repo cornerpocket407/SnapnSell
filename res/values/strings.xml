@@ -8,9 +8,9 @@
     <string name="tvPrice">Price:</string>
     <string name="tvLocation">Location:</string>
     <string name="btnSubmit">Submit</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="title_activity_filter">FilterActivity</string>
-    <string name="title_activity_marketplace">MarketplaceActivity</string>
+    <string name="title_activity_login">Welcome to SnapnSell!</string>
+    <string name="title_activity_filter">Filter Results</string>
+    <string name="title_activity_marketplace">SnapnSell</string>
     <string name="login_btn_label">Sign in</string>
     <string name="filter_category_label">Category:</string>
     <string name="filter_location_label">Location:</string>
@@ -23,20 +23,21 @@
     <string name="used">Used:</string>
     <string name="confirm">Confirm</string>
     <string name="sell">Sell</string>
-    <string name="title_activity_payment">PaymentActivity</string>
+    <string name="title_activity_payment">Payment</string>
     <string name="expiration">Expiration:</string>
     <string name="card_number">Card Number:</string>
     <string name="purchase">Purchase</string>
     <string name="cvc">CVC:</string>
-    <string name="title_activity_my_listing">MyListingActivity</string>
+    <string name="title_activity_my_listing">My Listings</string>
     <string name="marketplace">Marketplace</string>
     <string name="myListing">My Listing</string>
     <string name="title_activity_test">TestActivity</string>
-    <string name="title_activity_receipt">ReceiptActivity</string>
+    <string name="title_activity_receipt">Receipt</string>
     <string name="tweet_your_purchase">Tweet your purchase!</string>
     <string name="confirm_your_listing">Confirm Your Listing</string>
     <string name="receipt">Receipt</string>
     <string name="create_a_listing">Create a Listing</string>
     <string name="title">Title:</string>
+    <string name="filter_searchbox_desc">Search the marketplace</string>
 
 </resources>

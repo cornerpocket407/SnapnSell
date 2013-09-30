@@ -10,12 +10,15 @@
 
     <SearchView
         android:id="@+id/svSearchMarketplace"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:queryHint="@string/searchview_query_hint" >
+        android:contentDescription="@string/filter_searchbox_desc"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/searchview_query_hint"
+        android:visibility="visible" >
 
     </SearchView>
 

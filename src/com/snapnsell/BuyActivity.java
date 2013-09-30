@@ -25,6 +25,7 @@ public class BuyActivity extends BaseActivity {
 			
 			@Override
 			public void onClick(View v) {
+				// TODO: Add this code to remove the item from our database once it is sold
 				ItemDescriptionFragment fragment = (ItemDescriptionFragment) getSupportFragmentManager().findFragmentById(R.id.flItemDesc);
 				String description = fragment.getEtDescription().getText().toString();
 				String location = fragment.getEtLocation().getText().toString();
@@ -49,7 +50,6 @@ public class BuyActivity extends BaseActivity {
 		ItemDescriptionFragment itemFragment = new ItemDescriptionFragment();
 		itemFragment.setArguments(bundle);
 		transaction.replace(R.id.flItemDesc, itemFragment);
-		transaction.commit();				
-		
+		transaction.commit();		
 	}
 }
