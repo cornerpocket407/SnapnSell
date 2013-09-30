@@ -51,5 +51,5 @@ public class ItemsAdapter extends ArrayAdapter<Item> {
 			ivItemPic.setImageBitmap(bitmap);
 		}
 		return view;
-	}
+	}	
 }

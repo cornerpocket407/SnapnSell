@@ -2,7 +2,6 @@ package com.snapnsell.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.view.Menu;
 import android.view.View;
@@ -39,6 +38,9 @@ public class SellActivity extends BaseActivity {
 				item.save();
 
 				Intent intent = new Intent(SellActivity.this, ConfirmActivity.class);
+				Bundle bundle = new Bundle();
+				bundle.putSerializable(ItemDescriptionFragment.BUNDLE_SECTION, ItemDescSection.CONFIRM);			
+				intent.putExtra("marketplaceItem", item);
 				startActivity(intent);
 			}
 		});

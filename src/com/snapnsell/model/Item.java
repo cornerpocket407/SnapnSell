@@ -7,7 +7,7 @@ import com.activeandroid.annotation.Column;
 import com.activeandroid.annotation.Table;
 
 @Table(name = "items")
-public class Item extends Model {
+public class Item extends Model implements Serializable {
 	
     @Column(name = "description")
 	private String description;

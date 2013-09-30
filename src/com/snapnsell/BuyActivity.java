@@ -2,9 +2,7 @@ package com.snapnsell;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
-import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -27,15 +25,15 @@ public class BuyActivity extends BaseActivity {
 			
 			@Override
 			public void onClick(View v) {
-//				ItemDescriptionFragment fragment = (ItemDescriptionFragment) getSupportFragmentManager().findFragmentById(R.id.flItemDesc);
-//				String description = fragment.getEtDescription().getText().toString();
-//				String location = fragment.getEtLocation().getText().toString();
-//				Double price = Double.valueOf(fragment.getEtPrice().getText().toString());
-//				String title = fragment.getEtTitle().getText().toString();
-//				String itemPicPath = fragment.getItemPicUri() == null ? "" : fragment.getItemPicUri().getPath();
-//				Item item = new Item(description, location, title, itemPicPath);
-//				item.save();
-//
+				ItemDescriptionFragment fragment = (ItemDescriptionFragment) getSupportFragmentManager().findFragmentById(R.id.flItemDesc);
+				String description = fragment.getEtDescription().getText().toString();
+				String location = fragment.getEtLocation().getText().toString();
+				Double price = Double.valueOf(fragment.getEtPrice().getText().toString());
+				String title = fragment.getEtTitle().getText().toString();
+				String itemPicPath = fragment.getItemPicUri() == null ? "" : fragment.getItemPicUri().getPath();
+				//Item item = new Item(description, location, title, itemPicPath, price, false);
+				//item.save();
+
 				Intent intent = new Intent(BuyActivity.this, PaymentActivity.class);
 				startActivity(intent);
 			}
@@ -51,6 +49,7 @@ public class BuyActivity extends BaseActivity {
 		ItemDescriptionFragment itemFragment = new ItemDescriptionFragment();
 		itemFragment.setArguments(bundle);
 		transaction.replace(R.id.flItemDesc, itemFragment);
-		transaction.commit();
+		transaction.commit();				
+		
 	}
 }

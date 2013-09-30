@@ -1,9 +1,9 @@
 package com.snapnsell.fragment;
 
 import java.io.File;
+import java.io.Serializable;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -20,7 +20,6 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-import com.activeandroid.query.Select;
 import com.snapnsell.R;
 import com.snapnsell.model.Item;
 import com.snapnsell.type.ItemDescSection;
@@ -61,16 +60,19 @@ public class ItemDescriptionFragment extends Fragment {
 				BUNDLE_SECTION);
 		init(section == ItemDescSection.SELL);
 		if (section == ItemDescSection.CONFIRM || section == ItemDescSection.BUY) {
-			Item item = new Select().from(Item.class).orderBy("id DESC").limit("1")
-					.executeSingle();
-			etDescription.setText(item.getDescription());
-			etTitle.setText(item.getTitle());
-			etLocation.setText(item.getLocation());
-			etPrice.setText(String.valueOf(item.getPrice()));
-			cbUsed.setChecked(item.isUsed());
-			String itemPicPath = item.getItemPicPath();
-			if (item.getItemPicPath() != null) {
-				setImage(itemPicPath);
+			Item item = (Item) getActivity().getIntent().getSerializableExtra("marketplaceItem");
+			//Item item = new Select().from(Item.class).orderBy("id DESC").limit("1")
+				//	.executeSingle();
+			if (item != null) {
+				etDescription.setText(item.getDescription());
+				etTitle.setText(item.getTitle());
+				etLocation.setText(item.getLocation());
+				etPrice.setText(String.valueOf(item.getPrice()));
+				cbUsed.setChecked(item.isUsed());
+				String itemPicPath = item.getItemPicPath();
+				if (item.getItemPicPath() != null) {
+					setImage(itemPicPath);
+			}
 			}
 		}
 	}

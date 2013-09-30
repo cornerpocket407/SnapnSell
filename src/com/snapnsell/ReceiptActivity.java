@@ -3,19 +3,17 @@ package com.snapnsell;
 import java.util.HashMap;
 
 import org.json.JSONObject;
-import org.scribe.model.Parameter;
-
-import com.activeandroid.query.Select;
-import com.loopj.android.http.JsonHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
-import com.snapnsell.TwitterApp;
-import com.snapnsell.model.Item;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+
+import com.activeandroid.query.Select;
+import com.loopj.android.http.JsonHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
+import com.snapnsell.model.Item;
 
 public class ReceiptActivity extends BaseActivity {
 

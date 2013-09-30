@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.codepath.oauth.OAuthLoginActivity;
+import com.snapnsell.activity.SellActivity;
 
 public class LoginActivity extends OAuthLoginActivity<TwitterClient> {
 
@@ -27,7 +28,7 @@ public class LoginActivity extends OAuthLoginActivity<TwitterClient> {
 	// i.e Display application "homepage"
     @Override
     public void onLoginSuccess() {
-    	Intent i = new Intent(this, BuyActivity.class);
+    	Intent i = new Intent(this, MarketplaceActivity.class);
     	startActivity(i);
     }
     
