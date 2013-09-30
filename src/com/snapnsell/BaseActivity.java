@@ -1,5 +1,7 @@
 package com.snapnsell;
 
+import com.snapnsell.activity.SellActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -26,8 +28,8 @@ public class BaseActivity extends FragmentActivity {
 		startActivity(intent);
 	}
 	
-	public void onMyListing(MenuItem item) {
-		Intent intent = new Intent(this, MyListingActivity.class);
+	public void onSell(MenuItem item) {
+		Intent intent = new Intent(this, SellActivity.class);
 		startActivity(intent);
 	}
 

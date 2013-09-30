@@ -6,11 +6,10 @@
         android:onClick="onMarketplace"
         android:showAsAction="ifRoom|withText"
         android:title="@string/marketplace"/>
-<!--     <item
-        android:id="@+id/miMyListing"
-        android:icon="@drawable/ic_action_my_listing"
-        android:onClick="onMyListing"
+ <item
+        android:id="@+id/miSell"
+        android:icon="@drawable/ic_action_sell"
+        android:onClick="onSell"
         android:showAsAction="ifRoom|withText"
-        android:title="@string/myListing"/>
- -->
+        android:title="@string/sell"/>
 </menu>
