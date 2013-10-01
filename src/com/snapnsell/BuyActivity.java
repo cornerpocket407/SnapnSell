@@ -1,6 +1,7 @@
 package com.snapnsell;
 
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
@@ -21,6 +22,7 @@ public class BuyActivity extends BaseActivity {
 		setContentView(R.layout.activity_buy);
 		loadFragment();
 		Button btnSubmit = (Button) findViewById(R.id.btnBuy);
+		btnSubmit.getBackground().setColorFilter(0xFF00FF00, PorterDuff.Mode.MULTIPLY);
 		btnSubmit.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -34,8 +36,12 @@ public class BuyActivity extends BaseActivity {
 				String itemPicPath = fragment.getItemPicUri() == null ? "" : fragment.getItemPicUri().getPath();
 				//Item item = new Item(description, location, title, itemPicPath, price, false);
 				//item.save();
-
+				
+				Item item = (Item) getIntent().getSerializableExtra("marketplaceItem");
+				Bundle bundle = new Bundle();
 				Intent intent = new Intent(BuyActivity.this, PaymentActivity.class);
+				intent.putExtra("marketplaceItem", item);								
+				
 				startActivity(intent);
 			}
 		});

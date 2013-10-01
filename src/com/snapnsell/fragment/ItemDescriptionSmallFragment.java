@@ -43,8 +43,9 @@ public class ItemDescriptionSmallFragment extends Fragment {
 	public void onStart() {
 		super.onStart();
 		init();
-		Item item = new Select().from(Item.class).orderBy("id desc").limit("1")
-				.executeSingle();
+		//Item item = new Select().from(Item.class).orderBy("id desc").limit("1")
+		//		.executeSingle();
+		Item item = (Item) getActivity().getIntent().getSerializableExtra("marketplaceItem");
 		tvTitle.setText(item.getTitle());
 		tvLocation.setText(item.getLocation());
 		tvPrice.setText(String.valueOf(item.getPrice()));

@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="8sp"
         android:contentDescription="@string/filter_searchbox_desc"
         android:iconifiedByDefault="false"
         android:queryHint="@string/searchview_query_hint"
@@ -28,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/svSearchMarketplace"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp" >
+        android:layout_marginTop="15dp" >
     </ListView>
 
 </RelativeLayout>

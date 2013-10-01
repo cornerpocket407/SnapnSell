@@ -5,6 +5,7 @@ import java.util.HashMap;
 import org.json.JSONObject;
 
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -26,6 +27,7 @@ public class ReceiptActivity extends BaseActivity {
 				.executeSingle();
 		
 		Button btnTweetPurchase = (Button) findViewById(R.id.btnTweetPurchase);
+		btnTweetPurchase.getBackground().setColorFilter(0xFF00FF00, PorterDuff.Mode.MULTIPLY);
 		btnTweetPurchase.setOnClickListener(new OnClickListener() {
 			
 			@Override

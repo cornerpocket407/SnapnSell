@@ -1,6 +1,7 @@
 package com.snapnsell.activity;
 
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.view.Menu;
@@ -23,6 +24,7 @@ public class SellActivity extends BaseActivity {
 		setContentView(R.layout.activity_sell);
 		loadFragment();
 		Button btnSubmit = (Button) findViewById(R.id.btnSell);
+		btnSubmit.getBackground().setColorFilter(0xFF00FF00, PorterDuff.Mode.MULTIPLY);
 		btnSubmit.setOnClickListener(new OnClickListener() {
 			
 			@Override

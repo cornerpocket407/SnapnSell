@@ -31,7 +31,6 @@
             android:name="com.snapnsell.LoginActivity"
             android:label="@string/title_activity_login" >
 
-            
                  <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -46,8 +45,7 @@
                 <data
                     android:host="mytwitterapp"
                     android:scheme="oauth" />
-            </intent-filter>
-            
+            </intent-filter> 
         </activity>
         <activity
             android:name="com.snapnsell.BuyActivity"
@@ -67,13 +65,15 @@
         <activity
             android:name="com.snapnsell.MarketplaceActivity"
             android:label="@string/title_activity_marketplace" >
-          <!--   
+     <!--        
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
              -->
+            
+            
         </activity>
         <activity
             android:name="com.snapnsell.ConfirmActivity"
@@ -83,14 +83,12 @@
             android:name="com.snapnsell.activity.SellActivity"
             android:label="@string/create_a_listing" >
 
-            <!-- 
              <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
              
-             -->
         </activity>
         <activity
             android:name="com.snapnsell.activity.PaymentActivity"

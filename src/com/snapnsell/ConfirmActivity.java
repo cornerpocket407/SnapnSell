@@ -1,20 +1,13 @@
 package com.snapnsell;
 
-import java.util.HashMap;
-
-import org.json.JSONObject;
-
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
-import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import com.loopj.android.http.JsonHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
 import com.snapnsell.fragment.ItemDescriptionFragment;
 import com.snapnsell.type.ItemDescSection;
 
@@ -27,6 +20,7 @@ public class ConfirmActivity extends BaseActivity {
 		loadFragment();
 		
 		Button btnConfirm = (Button) findViewById(R.id.btnConfirm);
+		btnConfirm.getBackground().setColorFilter(0xFF00FF00, PorterDuff.Mode.MULTIPLY);
 		btnConfirm.setOnClickListener(new OnClickListener() {
 			
 			@Override
