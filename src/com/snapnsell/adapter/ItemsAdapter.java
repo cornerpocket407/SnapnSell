@@ -33,11 +33,25 @@ public class ItemsAdapter extends ArrayAdapter<Item> {
 		if (view == null) {
 			LayoutInflater inflater = (LayoutInflater) getContext()
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			view = inflater.inflate(R.layout.fragment_item_description_small,
+			view = inflater.inflate(R.layout.marketplace_item,
 					null);
 
 		}
 
+		TextView tvItemPrice = (TextView) view.findViewById(R.id.tvItemPrice);		
+		TextView tvItemTitle = (TextView) view.findViewById(R.id.tvItemTitle);
+		ImageView ivItemPicture = (ImageView) view.findViewById(R.id.ivItemPicture);
+		TextView tvItemCategory = (TextView) view.findViewById(R.id.tvItemCategory);
+		tvItemTitle.setText(item.getTitle());		
+		tvItemPrice.setText("$" + String.valueOf(item.getPrice()));
+		tvItemCategory.setText(item.getLocation());
+		String itemPicPath = item.getItemPicPath();
+		if (item.getItemPicPath() != null) {
+			Bitmap bitmap = BitmapFactory.decodeFile(item.getItemPicPath());
+			ivItemPicture.setImageBitmap(bitmap);
+		}		
+    
+    /*
 		TextView tvPrice = (TextView) view.findViewById(R.id.tvPrice);
 		TextView tvLocation = (TextView) view.findViewById(R.id.tvLocation);
 		TextView tvTitle = (TextView) view.findViewById(R.id.tvTitle);
@@ -49,7 +63,7 @@ public class ItemsAdapter extends ArrayAdapter<Item> {
 		if (item.getItemPicPath() != null) {
 			Bitmap bitmap = BitmapFactory.decodeFile(item.getItemPicPath());
 			ivItemPic.setImageBitmap(bitmap);
-		}
+		}*/
 		return view;
 	}	
 }
