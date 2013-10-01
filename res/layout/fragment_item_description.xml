@@ -93,7 +93,8 @@
 	    android:id="@+id/cbUsed"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/tvUsed"
 	    android:layout_alignBottom="@+id/tvUsed"
-	    android:layout_toRightOf="@+id/tvDescription" />
+           android:layout_toRightOf="@+id/tvDescription" />
 
 </RelativeLayout>
