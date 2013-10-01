@@ -1,20 +1,28 @@
 package com.snapnsell;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.codepath.oauth.OAuthLoginActivity;
-import com.snapnsell.activity.SellActivity;
 
 public class LoginActivity extends OAuthLoginActivity<TwitterClient> {
-
+	ImageView ivLogo;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
+		
+		ivLogo = (ImageView)findViewById(R.id.ivLogo);
+		Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
+                R.drawable.snapnsell_logo);
+		ivLogo.setImageBitmap(bitmap);
 	}
 
 	// Inflate the menu; this adds items to the action bar if it is present.
